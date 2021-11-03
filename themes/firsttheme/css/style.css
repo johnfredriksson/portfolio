@@ -37,6 +37,10 @@ body {
     width: 60%;
 }
 
+.main a {
+    color: yellow;
+}
+
 .main img {
     height: 200px;
     width: 200px;
