@@ -1,0 +1,23 @@
+.footer {
+    display: grid;
+    grid-template-areas:
+    'social'
+    'copy';
+    background-color: $accent-color;
+    text-align: center;
+}
+
+.social {
+    grid-area: social;
+    margin-top: 20px;
+}
+
+.copy {
+    grid-area: copy;
+}
+
+i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+

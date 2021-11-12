@@ -1,8 +1,14 @@
 ---
 Logo: image/code-logo.png
-Tagline: Mitt portfolio.
+Tagline:
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/johnfredriksson/portfolio/
-      icon: github
+      icon: fab fa-github
+    - title: Link till instagram.
+      url: https://instagram.com/johnfredriksson/
+      icon: fab fa-instagram
+    - title: Link till BTH
+      url: https://bth.se
+      icon: fas fa-graduation-cap
 ---
