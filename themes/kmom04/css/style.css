@@ -6613,7 +6613,7 @@ body {
 
   .nav {
     background: rgba(255, 255, 255, 0.356);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;
@@ -6861,6 +6861,10 @@ i {
   font-size: 3em;
 }
 
+.tech-inner-box p {
+  color: white;
+}
+
 .tech {
   display: grid;
   grid-template-columns: 1fr;
@@ -6869,7 +6873,6 @@ i {
   background-color: #1e2d40;
   height: 100%;
   width: 100%;
-  color: white;
 }
 .tech h2 {
   grid-area: tech-title;

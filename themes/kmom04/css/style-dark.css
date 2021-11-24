@@ -6464,7 +6464,7 @@ code {
   padding: 0.1em 0.2em;
   border: 1px solid black;
   border-radius: 0.3em;
-  background: #eaf186;
+  background: #1e2d40;
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
@@ -6504,7 +6504,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: white;
   font-family: "Abhaya Libre", serif;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -6513,7 +6513,7 @@ h6 {
 }
 
 p {
-  color: black;
+  color: white;
   font-family: "Abhaya Libre", serif;
   margin-bottom: 20px;
   margin-left: 10px;
@@ -6522,11 +6522,11 @@ p {
 }
 
 .header a {
-  color: #a3961f;
+  color: #a3972c;
 }
 
 a {
-  color: #a3961f;
+  color: #a3972c;
 }
 
 * {
@@ -6537,7 +6537,7 @@ a {
 }
 
 body {
-  background-color: white;
+  background-color: #272525;
   max-width: 100%;
 }
 
@@ -6590,7 +6590,7 @@ body {
   .site-header img {
     display: inline-block;
     height: 100px;
-    border: 1px solid #a3961f;
+    border: 1px solid #a3972c;
     border-radius: 50%;
   }
 
@@ -6598,14 +6598,14 @@ body {
     display: inline-block;
     height: 30px;
     width: 30px;
-    order: 1px solid #a3961f;
+    order: 1px solid #a3972c;
     border-radius: 50%;
   }
 
   .title {
     height: 50px;
     width: 50px;
-    order: 1px solid #a3961f;
+    order: 1px solid #a3972c;
     border-radius: 50%;
     position: relative;
     right: 100px;
@@ -6613,7 +6613,7 @@ body {
 
   .nav {
     background: rgba(255, 255, 255, 0.356);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;
@@ -6635,7 +6635,7 @@ body {
     background-color: transparent;
   }
   .main-hamburger i {
-    color: #a3961f;
+    color: #a3972c;
     margin: 0;
   }
 }
@@ -6656,7 +6656,7 @@ body {
 
   .title {
     grid-area: title;
-    background-color: #a3961f;
+    background-color: #a3972c;
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -6679,7 +6679,7 @@ body {
   }
 
   .navlinkitem {
-    background-color: #a3961f;
+    background-color: #a3972c;
     text-align: center;
     position: relative;
     top: 50px;
@@ -6717,7 +6717,7 @@ body {
 
   .title {
     grid-area: title;
-    background-color: #a3961f;
+    background-color: #a3972c;
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -6740,7 +6740,7 @@ body {
   .navlinkitem {
     height: 70px;
     width: 70px;
-    background-color: #a3961f;
+    background-color: #a3972c;
     border-radius: 50%;
     text-align: center;
     margin-right: 2vw;
@@ -6861,6 +6861,10 @@ i {
   font-size: 3em;
 }
 
+.tech-inner-box p {
+  color: white;
+}
+
 .tech {
   display: grid;
   grid-template-columns: 1fr;
@@ -6869,11 +6873,10 @@ i {
   background-color: #1e2d40;
   height: 100%;
   width: 100%;
-  color: white;
 }
 .tech h2 {
   grid-area: tech-title;
-  background-color: #a3961f;
+  background-color: #a3972c;
   margin: 0;
   height: 60px;
   text-align: center;
@@ -6919,7 +6922,7 @@ i {
 }
 
 .tech-nav {
-  border-right: 1px solid #a3961f;
+  border-right: 1px solid #a3972c;
   margin-right: 10px;
 }
 .tech-nav a {
@@ -6930,7 +6933,7 @@ i {
 }
 .tech-nav i {
   margin: 5px 0;
-  color: #a3961f;
+  color: #a3972c;
 }
 .tech-nav button {
   display: none;
@@ -6946,7 +6949,7 @@ i {
   .tech-nav {
     margin: 0;
     border-right: 0;
-    border-top: 1px solid #a3961f;
+    border-top: 1px solid #a3972c;
   }
   .tech-nav a {
     margin: 0;
@@ -6975,7 +6978,7 @@ i {
   background-color: #1e2d40;
   margin: 0;
   text-align: center;
-  color: #a3961f;
+  color: #a3972c;
 }
 
 .colors {
@@ -6999,7 +7002,7 @@ i {
 .analysis-inner-box {
   position: relative;
   top: 50%;
-  background-color: white;
+  background-color: #272525;
   height: 80px;
 }
 .analysis-inner-box i {

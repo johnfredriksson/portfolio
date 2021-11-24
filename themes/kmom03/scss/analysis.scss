@@ -1,0 +1,84 @@
+.analysis-main {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 300px 300px;
+    grid-template-areas:
+    'title title'
+    'load principles'
+    'colors principles';
+    grid-gap: 5px;
+    margin-top: 25px;
+}
+
+.analysis-title {
+    grid-area: title;
+    background-color: $accent-color;
+    margin: 0;
+    text-align: center;
+    color: $link-color;
+}
+
+.colors {
+    grid-area: colors;
+    background-image: url('../../../assets/img/colors.jpeg');
+    background-size: cover;
+}
+
+.principles {
+    grid-area: principles;
+    background-image: url('../../../assets/img/web-design.jpeg');
+    background-size: cover;
+}
+
+.load {
+    grid-area: load;
+    background-image: url('../../../assets/img/loading-time.png');
+    background-size: cover;
+}
+
+.analysis-inner-box {
+    position: relative;
+    top: 50%;
+    background-color: $background-color;
+    height: 80px;
+
+    i {
+        float: right;
+    }
+}
+
+.analysis-item {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(0);
+}
+
+@media (min-width: 768px) {
+    .analysis-inner-box {
+        opacity: 0%;
+    }
+
+    .analysis-item:hover {
+        backdrop-filter: blur(5px);
+    
+        .analysis-inner-box {
+            opacity: 100%;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .analysis-main {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 300px 300px 300px;
+        grid-gap: 0;
+        grid-template-areas:
+        'title'
+        'colors'
+        'load'
+        'principles';
+    }
+}

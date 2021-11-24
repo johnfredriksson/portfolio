@@ -1,5 +1,17 @@
 console.log("Ready")
 
+let mainHamburger = document.getElementById("main-hamburger");
+let mainNav = document.getElementById("main-nav");
+
+mainHamburger.addEventListener("click", function() {
+    console.log("hello")
+    if (mainNav.classList.length === 2) {
+        mainNav.classList.remove("navhide")
+    } else {
+        mainNav.classList.add("navhide");
+    }
+})
+
 let hamburger = document.getElementById("hamburger");
 let mobLink = document.getElementsByClassName("mob-link");
 

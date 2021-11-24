@@ -49,6 +49,12 @@
     font-size: 3em;
 }
 
+.tech-inner-box {
+    p {
+        color: rgb(255, 255, 255);
+    }
+}
+
 .tech {
     display: grid;
     grid-template-columns: 1fr;
@@ -59,7 +65,6 @@
     background-color: $accent-color;
     height: 100%;
     width: 100%;
-    color: $background-color;
 
     h2 {
         grid-area: tech-title;

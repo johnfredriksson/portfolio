@@ -1,5 +1,5 @@
 @import '../../node_modules/normalize.css/normalize';
-@import 'variables';
+@import 'variables-dark';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -10,7 +10,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
 
 @import 'blockquotes';
-@import 'code';
+@import 'code-dark';
 @import 'typography';
 @import 'main';
 @import 'header';

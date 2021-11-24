@@ -1,0 +1,25 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    <div class="container">
+        {% include 'incl/nav.twig' %}
+
+        <div class="single-tech-main" role="main">
+            <div id="tech-nav" class="tech-nav">
+                <div id="hamburger"><button><i class="fas fa-bars"></i></button></div>
+                <a class="mob-link hide" href="../technology/html">HTML</a>
+                <a class="mob-link hide" href="../technology/css">CSS</a>
+                <a class="mob-link hide" href="../technology/javascript">Javscript</a>
+                <a class="mob-link hide" href="../technology/php">PHP</a>
+                <a class="mob-link hide" href="../technology/python">Python</a>
+                <a class="mob-link hide" href="../technology/sqlite">Sqlite</a>
+                <a class="mob-link hide" href="../technology/git">Git</a>
+            </div>
+            <div class="content">{{ content }}</div>
+        </div>
+        
+        {% include 'incl/footer.twig' %}
+    </div>
+</body>
+
+</html>
