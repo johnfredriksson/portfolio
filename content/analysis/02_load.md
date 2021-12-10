@@ -34,7 +34,7 @@ Resultat
 
 ### Far i hatten
 
-[![Far i Hatten](%assets_url%/img/farihatten.png "Far i hattens landningssida")](%assets_url%/img/farihatten.png)<br>
+[![Far i Hatten](%assets_url%/img/farihatten.webp "Far i hattens landningssida")](%assets_url%/img/farihatten.webp)<br>
 
 På landningssidan möts vi av mycket färg och bilder, samt effekter som laddas när vi skrollar oss igenom innehållet. 
 Både Meny och Boka är lika varandra med en stor bild som spänner sig över sidans bredd som kompletteras med olika textstycken.
@@ -42,7 +42,7 @@ För förbättringsförslag, se kalkyl nedan.
 
 ### Lyran
 
-[![Lyran](%assets_url%/img/lyran.png "Lyrans landningssida")](%assets_url%/img/lyran.png)<br>
+[![Lyran](%assets_url%/img/lyran.webp "Lyrans landningssida")](%assets_url%/img/lyran.webp)<br>
 
 Hela webbplatsen är uppbyggd av en enda sida, länkarna för navigering scrollar användaren nedåt i flödet.
 En större mängd bilder går att skåda på sidan.
@@ -50,14 +50,14 @@ För förbättringsförslag, se kalkyl nedan.
 
 ### Royal biljard
 
-[![Royal Biljard](%assets_url%/img/royalbiljard.png "Royal biljards landningssida")](%assets_url%/img/royalbiljard.png)<br>
+[![Royal Biljard](%assets_url%/img/royalbiljard.webp "Royal biljards landningssida")](%assets_url%/img/royalbiljard.webp)<br>
 
 En väldigt grafisk förstasida med en gif som spänner sig över hela fönstret. Även denna webbplats består av en enda sida med 
 länkar som scrollar ner användaren till valt objekt.
 För förbättringsförslag, se kalkyl nedan.
 
 <div class="embeded-container">
-    <iframe width="100%" height="300px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUf_z5zQLe_jjQo-J84iILpSmVGgwUVxctImSwkIxw5eLhEGWovF-y1p-6PSsBarLjfII2VyclxoYw/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    <iframe title="Loading speed spreadsheet" width="100%" height="300px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUf_z5zQLe_jjQo-J84iILpSmVGgwUVxctImSwkIxw5eLhEGWovF-y1p-6PSsBarLjfII2VyclxoYw/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </div>
 
 

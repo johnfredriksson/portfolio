@@ -6,51 +6,58 @@ Template: technologies
 
 <h1 class="tech-title">Teknologier</h1>
 
-<a href="technology/html"><div class="tech html">
+<a aria-label="html" href="technology/html" class="tech html">
+<div class="techbox">
 <h2>HTML</h2>
-<div class="tech-inner-box"><p>Grunden i hemsidor</p><i class="fas fa-external-link-square-alt"></i>
+<p>Grunden i hemsidor</p>
 
 </div>
-</div></a>
+</a>
 
-<a href="technology/css"><div class="tech css">
+<a aria-label="css" href="technology/css" class="tech css">
+<div class="techbox">
 <h2>CSS</h2>
-<div class="tech-inner-box"><p>Skapa stil</p><i class="fas fa-external-link-square-alt"></i>
+<p>Skapa stil</p>
 
 </div>
-</div></a>
+</a>
 
-<a href="technology/javascript"><div class="tech js">
+<a aria-label="js" href="technology/javascript" class="tech js">
+<div class="techbox">
 <h2>Javascript</h2>
-<div class="tech-inner-box"><p>Fyll sidan med funktioner</p><i class="fas fa-external-link-square-alt"></i>
+<p>Fyll sidan med funktioner</p>
 
 </div>
-</div></a>
+</a>
 
-<a href="technology/php"><div class="tech php">
+<a aria-label="php" href="technology/php" class="tech php">
+<div class="techbox">
 <h2>PHP</h2>
-<div class="tech-inner-box"><p>Fyll sidan med funktioner</p><i class="fas fa-external-link-square-alt"></i>
+<p>Fyll sidan med funktioner</p>
 
 </div>
-</div></a>
+</a>
 
-<a href="technology/python"><div class="tech python">
+<a aria-label="python" href="technology/python" class="tech python">
+<div class="techbox">
 <h2>Python</h2>
-<div class="tech-inner-box"><p>Fyll sidan med funktioner</p><i class="fas fa-external-link-square-alt"></i>
+<p>Fyll sidan med funktioner</p>
 
 </div>
-</div></a>
+</a>
 
-<a href="technology/sqlite"><div class="tech sqlite">
+<a aria-label="sqlite" href="technology/sqlite" class="tech sqlite">
+<div class="techbox">
 <h2>Sqlite</h2>
-<div class="tech-inner-box"><p>Koppla din sida mot en databas</p><i class="fas fa-external-link-square-alt"></i>
+<p>Koppla din sida mot en databas</p>
 
 </div>
-</div></a>
+</a>
 
-<a href="technology/git"><div class="tech git">
+<a aria-label="git" href="technology/git" class="tech git">
+<div class="techbox">
 <h2>Git</h2>
-<div class="tech-inner-box"><p>Versionshanterare</p><i class="fas fa-external-link-square-alt git-link"></i>
+<p>Versionshanterare</p>
 
 </div>
-</div></a>
+</a>

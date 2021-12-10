@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -6505,7 +6505,7 @@ h4,
 h5,
 h6 {
   color: black;
-  font-family: "Abhaya Libre", serif;
+  font-family: "Raleway", sans-serif;
   margin-top: 20px;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -6514,7 +6514,7 @@ h6 {
 
 p {
   color: black;
-  font-family: "Abhaya Libre", serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -6527,6 +6527,10 @@ p {
 
 a {
   color: #a3961f;
+}
+
+.copy p {
+  color: white;
 }
 
 * {
@@ -6548,6 +6552,7 @@ body {
 
 .title {
   grid-area: title;
+  color: black;
 }
 
 .site-header {
@@ -6560,9 +6565,11 @@ body {
   min-height: 70vh;
 }
 .main img {
-  display: inline-block;
   width: 250px;
-  text-align: center;
+  height: 400px;
+  object-fit: cover;
+  float: left;
+  margin-right: 10px;
 }
 
 .footer {
@@ -6575,11 +6582,24 @@ body {
   margin: auto;
 }
 
+img {
+  filter: brightness(50%);
+  transition: all ease-in-out 0.1s;
+}
+
+img:hover {
+  filter: brightness(100%);
+}
+
 @media (max-width: 767px) {
   .container {
     grid-template-areas: "header" "main" "footer";
   }
 }
+.title-text {
+  color: white;
+}
+
 @media (max-width: 767px) {
   .site-header {
     width: 100vw;
@@ -6598,27 +6618,32 @@ body {
     display: inline-block;
     height: 30px;
     width: 30px;
-    order: 1px solid #a3961f;
     border-radius: 50%;
   }
 
   .title {
     height: 50px;
     width: 50px;
-    order: 1px solid #a3961f;
     border-radius: 50%;
     position: relative;
     right: 100px;
   }
 
   .nav {
-    background: rgba(255, 255, 255, 0.356);
-    backdrop-filter: blur(5px);
+    background-color: #1e2d40;
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
+    height: 100vh;
+    z-index: 999;
     font-size: 1.5em;
+  }
+  .nav p {
+    color: white;
+  }
+  .nav li {
+    margin-bottom: 20px;
   }
 
   .navhide {
@@ -6630,6 +6655,7 @@ body {
     top: 5px;
     right: 5px;
     box-sizing: border-box;
+    z-index: 10000;
   }
   .main-hamburger button {
     background-color: transparent;
@@ -6639,10 +6665,12 @@ body {
     margin: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1289px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .site-header {
     display: grid;
-    grid-template-areas: "logo navlinks title";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "title" "navlinks";
     background-color: #1e2d40;
   }
   .site-header img {
@@ -6661,25 +6689,16 @@ body {
     width: 70px;
     border-radius: 50%;
     margin-top: 40px;
-    margin-left: 20px;
-  }
-
-  .logo {
-    grid-area: logo;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    margin-left: 0spx;
   }
 
   .navlinks {
     grid-area: navlinks;
-    grid-column-start: 3;
-    grid-column-end: 4;
     position: relative;
-    right: 50px;
+    bottom: 50px;
   }
 
   .navlinkitem {
-    background-color: #a3961f;
     text-align: center;
     position: relative;
     top: 50px;
@@ -6690,25 +6709,25 @@ body {
     font-size: 1.3em;
   }
 
-  .site-header:hover .logo {
-    transform: rotateX(360deg);
-    transition: all 1s;
-  }
-
   .nav-toggle {
     position: absolute;
     right: 20px;
   }
-}
-@media (min-width: 1290px) {
-  .site-header {
-    display: grid;
-    grid-template-areas: "logo navlinks title";
-    background-color: #1e2d40;
+
+  .nav {
+    position: relative;
+    bottom: 107px;
   }
-  .site-header img {
-    display: inline-block;
-    height: 140px;
+  .nav p {
+    color: white;
+  }
+}
+@media (min-width: 1000px) {
+  .site-header {
+    background-color: #1e2d40;
+    display: grid;
+    grid-template-columns: 150px, auto;
+    grid-template-areas: "title navlinks";
   }
 
   .main-hamburger {
@@ -6717,68 +6736,49 @@ body {
 
   .title {
     grid-area: title;
-    background-color: #a3961f;
-    height: 70px;
-    width: 70px;
+    border: 1px solid #a3961f;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-    margin-top: 40px;
-    margin-left: 20px;
-  }
-
-  .logo {
-    grid-area: logo;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    position: relative;
+    top: 20px;
+    left: 20px;
   }
 
   .navlinks {
     grid-area: navlinks;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    margin-left: 0;
   }
 
   .navlinkitem {
-    height: 70px;
-    width: 70px;
-    background-color: #a3961f;
+    height: 100px;
+    width: 100px;
+    background-color: #1e2d40;
     border-radius: 50%;
-    text-align: center;
-    margin-right: 2vw;
-    position: relative;
-    top: 25px;
+    border: 1px solid #a3961f;
+    margin-right: 1vw;
+    transform: rotateZ(-90deg);
+    transition: all 0.3s;
   }
   .navlinkitem p {
-    text-decoration: none;
-    display: none;
+    text-decoration: transparent;
     font-size: 1.3em;
+    color: #a3961f;
     position: relative;
-    top: 40px;
+    top: 30px;
+    left: -10px;
   }
 
   .site-header:hover .navlinkitem {
-    border-radius: 0;
-    width: 100px;
-    margin-right: 1vw;
-    transform: scale(1.2);
-    transition: all 0.5s;
+    transform: rotateZ(0);
+    transition: all 0.3s;
   }
   .site-header:hover .navlinkitem p {
-    color: #1e2d40;
-    display: inline;
     transition: ease-in-out 1s;
   }
   .site-header:hover .navlinkitem:hover {
     transform: scale(0.9);
-    border-radius: 50% 0 0;
-  }
-  .site-header:hover .logo {
-    transform: rotateX(360deg);
-    transition: all 1s;
-  }
-
-  .nav-toggle {
-    position: absolute;
-    right: 20px;
+    border: solid 1px white;
   }
 }
 .footer {
@@ -6861,42 +6861,22 @@ i {
   font-size: 3em;
 }
 
-.tech-inner-box p {
-  color: white;
+.tech {
+  background-color: #1e2d40;
+  transition: all ease-in-out 0.3s;
 }
 
-.tech {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0 1fr 3fr;
-  grid-template-areas: "tech-title" "tech-inner-box";
-  background-color: #1e2d40;
-  height: 100%;
-  width: 100%;
+.techbox h2 {
+  color: white;
 }
-.tech h2 {
-  grid-area: tech-title;
-  background-color: #a3961f;
-  margin: 0;
-  height: 60px;
-  text-align: center;
-}
-.tech .tech-inner-box {
-  grid-area: tech-inner-box;
-  background-color: #1e2d40;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-.tech i {
-  float: right;
+.techbox p {
+  color: white;
 }
 
 @media (min-width: 768px) {
   .tech:hover {
-    transform: rotateZ(1deg) scale(1.1);
-    box-shadow: 20px 20px 20px #2e2d2d;
-    transition: ease-in-out 0.5s;
+    transform: scale(0.9);
+    border-radius: 0 0 50%;
   }
 }
 @media (max-width: 767px) {
@@ -6909,8 +6889,6 @@ i {
   }
   .tech-main a {
     display: inline-block;
-    margin-bottom: 20px;
-    height: 20px;
   }
 }
 .single-tech-main {
@@ -6983,19 +6961,20 @@ i {
 
 .colors {
   grid-area: colors;
-  background-image: url("../../../assets/img/colors.jpeg");
+  background-image: url("../../../assets/img/colors.webp");
   background-size: cover;
+  backdrop-filter: brightness(30%);
 }
 
 .principles {
   grid-area: principles;
-  background-image: url("../../../assets/img/web-design.jpeg");
+  background-image: url("../../../assets/img/web-design.webp");
   background-size: cover;
 }
 
 .load {
   grid-area: load;
-  background-image: url("../../../assets/img/loading-time.png");
+  background-image: url("../../../assets/img/loading-time.webp");
   background-size: cover;
 }
 
@@ -7044,6 +7023,9 @@ i {
 .analysis-single-main img {
   width: 50%;
 }
+.analysis-single-main a {
+  color: #001aff;
+}
 
 @media (max-width: 767px) {
   .analysis-single-main {
@@ -7074,7 +7056,6 @@ video {
 
 @media (min-width: 1250px) {
   .gallery-main-img img:hover {
-    opacity: 70%;
     transform: scale(0.95);
     transition: all ease-in-out 0.5s;
   }
@@ -7097,7 +7078,7 @@ video {
   height: 100%;
 }
 
-@media (max-width: 1249px) {
+@media (max-width: 767px) {
   .gallery-main-img {
     grid-template-columns: 100%;
     margin: auto;
@@ -7106,6 +7087,21 @@ video {
     width: 80vw;
     height: 80vw;
     object-fit: cover;
+  }
+
+  .gallery-main {
+    width: 100%;
+  }
+
+  .embed-container {
+    max-width: 80vw;
+    margin: auto;
+  }
+}
+@media (max-width: 1249px) {
+  .gallery-main-img {
+    grid-template-columns: 100%;
+    margin: auto;
   }
 
   .gallery-main {

@@ -1,5 +1,5 @@
 ---
-Logo: image/code-logo.png
+Logo: image/code-logo.webp
 Tagline:
 Social:
     - title: Link till sidans github repo.

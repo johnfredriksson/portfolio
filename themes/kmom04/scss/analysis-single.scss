@@ -5,6 +5,10 @@
     img {
         width: 50%;
     }
+
+    a {
+        color: $alt-link-color;
+    }
 }
 
 @media (max-width: 767px) {

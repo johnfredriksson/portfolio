@@ -49,50 +49,28 @@
     font-size: 3em;
 }
 
-.tech-inner-box {
-    p {
-        color: rgb(255, 255, 255);
-    }
-}
-
 .tech {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0 1fr 3fr;
-    grid-template-areas:
-    'tech-title'
-    'tech-inner-box';
     background-color: $accent-color;
-    height: 100%;
-    width: 100%;
+    transition: all ease-in-out 0.3s;
+}
 
+.techbox {
     h2 {
-        grid-area: tech-title;
-        background-color: $link-color;
-        margin: 0;
-        height: 60px;
-        text-align: center;
+        color: $white;
     }
 
-    .tech-inner-box {
-        grid-area: tech-inner-box;
-        background-color: $accent-color;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-
-    i {
-        float: right;
+    p {
+        color: $white;
     }
 }
+
 @media (min-width: 768px) {
     .tech:hover {
-        transform: rotateZ(1deg) scale(1.1);
-        box-shadow: 20px 20px 20px rgb(46, 45, 45);
-        transition: ease-in-out 0.5s;
+        transform: scale(0.9);
+        border-radius: 0 0 50%;
     }
 }
+
 @media (max-width: 767px) {
     .tech-main {
         width: 100%;
@@ -111,8 +89,6 @@
 
         a {
             display: inline-block;
-            margin-bottom: 20px;
-            height: 20px;
         }
 
 

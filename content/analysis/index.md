@@ -6,7 +6,7 @@ Template: analysis
 
 <h1 class="analysis-title">Analysis</h1>
 
-<a class="colors" href="analysis/01_colors">
+<a aria-label="colors" class="colors" href="analysis/01_colors">
     <div class="analysis-item">
         <div class="analysis-inner-box">
             <i class="fas fa-external-link-square-alt"></i>
@@ -16,22 +16,22 @@ Template: analysis
     </div>
 </a>
 
-<a class="load" href="analysis/02_load">
+<a aria-label="loading" class="load" href="analysis/02_load">
     <div class="analysis-item">
         <div class="analysis-inner-box">
             <i class="fas fa-external-link-square-alt"></i>
             <h2>Laddning</h2>
-            <p>TBD</p>
+            <p>Genomgång av 3 sidor från aktörer inom restaurang</p>
         </div>
     </div>
 </a>
 
-<a class="principles" href="analysis/03_design_principles">
+<a aria-label="principles" class="principles" href="analysis/03_design_principles">
     <div class="analysis-item">
         <div class="analysis-inner-box">
             <i class="fas fa-external-link-square-alt"></i>
             <h2>Designregler</h2>
-            <p>TBD</p>
+            <p>Identifiera designprinciper hos videokreatörer</p>
         </div>
     </div>
 </a>

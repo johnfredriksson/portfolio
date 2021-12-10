@@ -29,7 +29,7 @@ Resultat
 
 ## Google
 
-[![Google](%assets_url%/img/google.png "Googles landningssida")](%assets_url%/img/google.png)<br>
+[![Google](%assets_url%/img/google.webp "Googles landningssida")](%assets_url%/img/google.webp)<br>
 
 ### Färg
 
@@ -58,7 +58,7 @@ Det är en bra storlek på typsnittet, radavstånd saknas då det inte finns tex
 
 ## Yahoo
 
-[![Yahoo](%assets_url%/img/yahoo.png "Yahoos landningssida")](https://se.yahoo.com)<br>
+[![Yahoo](%assets_url%/img/yahoo.webp "Yahoos landningssida")](https://se.yahoo.com)<br>
 
 ### Färg
 
@@ -83,7 +83,7 @@ samtidigt följa med i texten. Lagom storlek på texten.
 
 ## Bing
 
-[![Bing](%assets_url%/img/bing.png "Bings landningssida")](https://bing.se)<br>
+[![Bing](%assets_url%/img/bing.webp "Bings landningssida")](https://bing.se)<br>
 
 ### Färg
 

@@ -20,6 +20,7 @@ body {
 
 .title {
     grid-area: title;
+    color: rgb(0, 0, 0);
 }
 
 .site-header {
@@ -32,9 +33,11 @@ body {
     min-height: 70vh;
 
     img {
-        display: inline-block;
         width: 250px;
-        text-align: center;
+        height: 400px;
+        object-fit: cover;
+        float: left;
+        margin-right: 10px;
     }
 }
 
@@ -46,6 +49,15 @@ body {
 .main {
     width: 60%;
     margin: auto;
+}
+
+img {
+    filter: brightness(50%);
+    transition: all ease-in-out 0.1s;
+}
+
+img:hover {
+    filter: brightness(100%);
 }
 
 @media (max-width: 767px) {

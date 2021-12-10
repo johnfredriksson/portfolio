@@ -1,15 +1,8 @@
 <div class="header" role="banner">
     <div class="site-header">
-        {% if pages["_meta"].meta.logo %}
-        <div class="logo">
-            <a href="{{ base_url }}">
-                <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
-            </a>
-        </div>
-        {% endif %}
         <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
             <a href="{{ base_url }}">
-                <h1>{{ site_title }}</h1>
+                <h1 class="title-text">{{ site_title }}</h1>
                 {{ pages["_meta"].meta.tagline|markdown }}
             </a>
         </div>
@@ -18,12 +11,12 @@
                 <ul>
                     {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
                         <li{% if page.id==current_page.id %} class="active" {% endif %}>
-                            <a href="{{ page.url }}"><div class="navlinkitem"><p>{{ page.title }}<p></div></a>
+                            <a alt="{{ page.title }}" href="{{ page.url }}"><div class="navlinkitem"><p>{{ page.title }}<p></div></a>
                         </li>
                     {% endfor %}
                 </ul>
             </div>
         </div>
-        <div class="main-hamburger" id="main-hamburger"><button><i class="fas fa-bars"></i></button></div>
+        <div class="main-hamburger" id="main-hamburger"><button aria-label="navigation"><i class="fas fa-bars"></i></button></div>
     </div>
 </div>

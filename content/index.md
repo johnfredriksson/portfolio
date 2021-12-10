@@ -3,6 +3,8 @@ Title: Home
 Description: This is our index page.
 ---
 
+![John](%assets_url%/img/john1.webp)
+
 Välkommen.
 ==========================
 
@@ -12,6 +14,3 @@ Jag bor ihop med min sambo Selma och hunden Ester, som är en Alaskan Malamute p
 
 <!-- ![Ester busar](%assets_url%/img/jag-och-ester.jpeg)
 ![Ester och jag](%assets_url%/img/jag-och-ester2.jpeg) -->
-![John](%assets_url%/img/john1.jpeg)
-![Ester](%assets_url%/img/ester1.jpeg)
-![Selma och Ester](%assets_url%/img/selma1.jpeg)
